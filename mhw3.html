@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reddit replica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mhw3.css">
+  <script src="mhw3.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-sinistra">
+        <span class="icona-reddit">
+          <img src="reddit-logo.png" alt="Reddit">
+        </span>
+        <h3 class="titolo-reddit">
+          <a href="mhw3.html">reddit</a>
+        </h3>
+      </div>
+      <span class="ricerca">
+        <input type="text" class="ricerca-input" placeholder="Cerca su Reddit">
+      </span>
+      <span class="pulsanti">
+        <a href="" class="pulsante-scarica-app">Scarica app</a>
+        <a href="https://github.com/williamvil1" class="pulsante-github">Git Hub</a>
+        <button id="tema-toggle" class="pulsante-tema" aria-label="Cambia tema">
+          <span class="icona-tema">☀️</span>
+        </button>
+        <div class="menu-mobile-container">
+          <button class="pulsante-menu-mobile">☰</button>
+          <div class="dropdown-menu nascosto">
+            <a href="#" class="pulsante-scarica-app-mobile">Scarica App</a>
+            <a href="https://github.com/williamvil1" class="pulsante-github-mobile">GitHub</a>
+          </div>
+        </div>
+      </span>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="categorie">
+      <h2 class="home-link">
+        <span class="icona-home"></span>
+        <a href="mhw3.html">Home</a>
+      </h2>
+      <div class="link-categorie">
+        <h5 class="gaming-link">
+          <span class="icona-gaming">
+            <img src="gaming.png" alt="Gaming">
+          </span>
+          <a href="#" data-subreddit="gaming">Gaming</a>
+        </h5>
+        <h5 class="link-sport">
+          <span class="icona-sport">
+            <img src="sports.png" alt="Sport">
+          </span>
+          <a href="#" data-subreddit="sports">Sport</a>
+        </h5>
+        <h5 class="link-anime">
+          <span class="icona-anime">
+            <img src="anime.png" alt="Anime">
+          </span>
+          <a href="#" data-subreddit="anime">Anime</a>
+        </h5>
+        <h5 class="link-film_e_serie">
+          <span class="icona-film_e_serie">
+            <img src="movies.png" alt="Film">
+          </span>
+          <a href="#" data-subreddit="movies">Film e serie</a>
+        </h5>
+        <h5 class="link-musica">
+          <span class="icona-musica">
+            <img src="Music.png" alt="Musica">
+          </span>
+          <a href="#" data-subreddit="music">Musica</a>
+        </h5>
+        <h5 class="link-scienze">
+          <span class="icona-scienze">
+            <img src="science.png" alt="Scienze">
+          </span>
+          <a href="#" data-subreddit="science">Scienze</a>
+        </h5>
+      </div>
+      <div id="div-informazioni">
+        <h4 class="link-informazioni">
+          <span class="icona-informazioni">
+            <img src="informazioni.png" alt="Informazioni">
+          </span>
+          <a href="">Informazioni</a>
+        </h4>
+      </div>
+      <footer id="footer-pagina_principale">
+        <p>Sito creato da<br><i>William Villari</i></p>
+      </footer>
+    </nav>
+
+    <div class="contenuto-destro">
+      <section class="sezione-main">
+        <article class="post">
+          <div class="header-post">
+            <div class="post-info">
+              <h3 class="titolo-post">Post test</h3>
+              <div class="user-info">
+                <p class="utente-post">Posted by Anonymous</p>
+              </div>
+            </div>
+            <div class="subreddit-container">
+              <div class="avatar-subreddit">
+                <img src="gaming.png" alt="logo">
+              </div>
+              <a href="" class="pulsante-subreddit">r/gaming</a>
+            </div>
+          </div>
+
+          <div class="corpo-post">
+            <p>
+              Cliccare sulle categorie per ottenere i post relativi ai vari subreddit. <br/>  
+              Cliccare sull'immagine per ingrandirla.
+            </p>
+            <img src="https://cdn.dribbble.com/userupload/22034363/file/original-b168bef2b122f0f43d48649d9b477965.gif" class="immagine-post">
+          </div>
+
+          <div class="toggle-container">
+            <button class="toggle-commenti">Nascondi commenti</button>
+          </div>
+          <div class="post-voto">
+            <button class="pulsante-voto upvote">↑</button>
+            <span class="contatore-voto">10</span>
+            <button class="pulsante-voto downvote">↓</button>
+          </div>
+          <div class="sezione-commenti">
+            <h4 class="titolo-commenti">Commenti</h4>
+
+            <div class="commento">
+              <div class="commento-contenuto">
+                <div class="header-commenti">
+                  <div class="avatar-commento">
+                    <img src="avatar1.png" alt="Avatar utente">
+                  </div>
+                  <div class="commenti-info">
+                    <h3 class="autore-commento">Commentatore1</h3>
+                    <p class="testo-commento">Test commento 1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="commento">
+              <div class="commento-contenuto">
+                <div class="header-commenti">
+                  <div class="avatar-commento">
+                    <img src="avatar2.png" alt="Avatar utente">
+                  </div>
+                  <div class="commenti-info">
+                    <h3 class="autore-commento">Commentatore2</h3>
+                    <p class="testo-commento">Test commento 2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="commento">
+              <div class="commento-contenuto">
+                <div class="header-commenti">
+                  <div class="avatar-commento">
+                    <img src="avatar3.png" alt="Avatar utente">
+                  </div>
+                  <div class="commenti-info">
+                    <h3 class="autore-commento">Commentatore3</h3>
+                    <p class="testo-commento">Clicca sull'immagine per cambiarla.</p>
+                    <img src="https://images.sigma.world/f961697c5f6adef4950fe4929cc34aed.jpg" class="immagine-commento-cambiata">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-footer"> 
+              <div class="aggiungi-commento">
+                <textarea class="inserisci-commento" placeholder="Aggiungi un commento..."></textarea>
+                <div class="commento-sezione_voti">
+                  <button class="pulsante_invia-commento">Invia Commento</button>
+                  <button class="pulsante_genera-ai">🤖 Genera commento AI</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <div class="barra-laterale">
+        <div class="box-laterale post-recenti">
+          <h3>Post Recenti</h3>
+          <ul class="lista-post-recenti">
+            <li>
+              <a href="#">
+                <div class="post-recente-info">
+                  <p class="post-recente-titolo">Come migliorare le performance di gioco</p>
+                  <p class="post-recente-subreddit">r/Gaming</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="post-recente-info">
+                  <p class="post-recente-titolo">Il grande derby del weekend</p>
+                  <p class="post-recente-subreddit">r/Sport</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="post-recente-info">
+                  <p class="post-recente-titolo">Nuovo film animato in arrivo</p>
+                  <p class="post-recente-subreddit">r/Anime</p>
+                </div>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                  <div class="post-recente-info">
+                    <p class="post-recente-titolo">Ultima canzone uscita</p>
+                    <p class="post-recente-subreddit">r/Musica</p>
+                  </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <div class="post-recente-info">
+                    <p class="post-recente-titolo">La migliore serie in assoluto?</p>
+                    <p class="post-recente-subreddit">r/Film</p>
+                  </div>
+                </a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="box-laterale community">
+          <h3>Community Popolari</h3>
+          <ul class="lista-community">
+            <li>
+              <a href="#">
+                <div class="avatar-community">
+                  <img src="gaming.png" alt="Gaming">
+                </div>
+                <div class="community-info">
+                  <p class="community-nome">r/Gaming</p>
+                  <p class="community-membri">5.2M membri</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="avatar-community">
+                  <img src="sports.png" alt="Sport">
+                </div>
+                <div class="community-info">
+                  <p class="community-nome">r/Sport</p>
+                  <p class="community-membri">3.8M membri</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="avatar-community">
+                  <img src="anime.png" alt="Anime">
+                </div>
+                <div class="community-info">
+                  <p class="community-nome">r/Anime</p>
+                  <p class="community-membri">2.6M membri</p>
+                </div>
+              </a>
+            </li>
+            <li>
+                <a href="#">
+                  <div class="avatar-community">
+                    <img src="movies.png" alt="Film">
+                  </div>
+                  <div class="community-info">
+                    <p class="community-nome">r/Film</p>
+                    <p class="community-membri">6.2M membri</p>
+                  </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <div class="avatar-community">
+                    <img src="Music.png" alt="Musica">
+                  </div>
+                  <div class="community-info">
+                    <p class="community-nome">r/Musica</p>
+                    <p class="community-membri">18.0M membri</p>
+                  </div>
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer-telefono">
+    <p>Sito creato da William Villari</p>
+  </footer>
+
+  <div id="immagine-modale" class="modale-immagine nascosto">
+    <span class="chiudi-modale">&times;</span>
+    <img class="contenuto-modale" id="img-modale">
+    <div class="didascalia-modale"></div>
+  </div>
+
+</body>
+</html>
